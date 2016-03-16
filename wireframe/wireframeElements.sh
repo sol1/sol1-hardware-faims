@@ -13,7 +13,7 @@ mkdir -p wireframeImages
   
   ./makeElement.sh User_User_Login "Login" button 1 false false false false false wireframeImages/
   
-  ./makeElement.sh Control_Main_Record_Interview "Record Interview" button 1 false false false false false wireframeImages/
+  ./makeElement.sh Control_Main_Record_Asset "" button 1 false false false false false wireframeImages/
   
   ./makeElement.sh Control_Main_GPS_Diagnostics "GPS Diagnostics" input 1 false false false false true wireframeImages/
   
@@ -21,51 +21,31 @@ mkdir -p wireframeImages
   
   ./makeElement.sh Control_Search_Search_Button "Search" button 2 false false false false false wireframeImages/
   
-  ./makeElement.sh Control_Search_Entity_Types "Entity Types" dropdown 1 false false false false false wireframeImages/
-  
   ./makeElement.sh Control_Search_Entity_List "Entity List" list 1 false false false false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Title "Title" input 1 false false true true false wireframeImages/
+  ./makeElement.sh Asset_Customer_Customer "" dropdown 1 false false true true false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Description "Description" input 1 false false true true false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Manufacture_Date "" input 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Private "Private" radio 1 false false true true false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Make "" input 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Origination_Date "Origination Date" input 1 false false true true false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Model "" input 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Origination_Date_Narrative "Origination Date Narrative" input 1 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Serial "" input 2 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Add_Agent_Role "Add Agent Role" button 1 false false false false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Serial_Trigger "" button 2 false false false false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_List_of_Agent_Roles "List of Agent Roles" dropdown 1 false false false false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_GPS_Location "" input 1 false false false false true wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Linguistic_Data_Type "Linguistic Data Type" dropdown 1 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Photo "" pictureGallery 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Discourse_Type "Discourse Type" dropdown 1 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Notes "" input 1 false false true true false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Linguistic_Subject "Linguistic Subject" dropdown 1 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Attached_Audio "Attached Audio" file 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Country "Country" dropdown 1 false false true true false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Button_Attached_Audio "Attach Audio" button 1 false false false false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Region_Villiage "Region Villiage" dropdown 1 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Attached_Video "Attached Video" video 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Interview_Interview_Language_Local_Name "Language Local Name" dropdown 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Interview_Interview_Language_Content_ISO639-3 "Language Content ISO639-3" dropdown 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Interview_Interview_Language_Subject_ISO639-3 "Language Subject ISO639-3" dropdown 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Interview_Interview_Attached_Audio "Attached Audio" file 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Interview_Interview_Button_Attached_Audio "Attach Audio" button 1 false false false false false wireframeImages/
-  
-  ./makeElement.sh Interview_Interview_Attached_Video "Attached Video" video 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Interview_Interview_Button_Attached_Video "Attach Video" button 1 false false false false false wireframeImages/
-  
-  ./makeElement.sh Agent_Role_Agent_Role_First_Name "First Name" input 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Agent_Role_Agent_Role_Last_Name "Last Name" input 1 false false true false false wireframeImages/
-  
-  ./makeElement.sh Agent_Role_Agent_Role_Role "Role" dropdown 1 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Button_Attached_Video "Attach Video" button 1 false false false false false wireframeImages/
   
