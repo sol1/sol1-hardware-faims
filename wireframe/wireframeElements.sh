@@ -31,7 +31,9 @@ mkdir -p wireframeImages
   
   ./makeElement.sh Asset_Hardware_Model "" input 1 false false true false false wireframeImages/
   
-  ./makeElement.sh Asset_Hardware_Serial "" input 2 false false true false false wireframeImages/
+  ./makeElement.sh Asset_Hardware_Owner "" input 1 false false true false false wireframeImages/
+  
+  ./makeElement.sh Asset_Hardware_Serial "" input 2 false false true true false wireframeImages/
   
   ./makeElement.sh Asset_Hardware_Serial_Trigger "" button 2 false false false false false wireframeImages/
   

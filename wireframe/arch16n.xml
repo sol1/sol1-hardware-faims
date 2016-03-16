@@ -58,6 +58,7 @@
 <arch16n k="{on_and_bluetooth_disconnected}"><![CDATA[on and bluetooth disconnected]]></arch16n>
 <arch16n k="{on}"><![CDATA[on]]></arch16n>
 <arch16n k="{Other}"><![CDATA[Other]]></arch16n>
+<arch16n k="{Owner}"><![CDATA[Owner]]></arch16n>
 <arch16n k="{Photo}"><![CDATA[Photo]]></arch16n>
 <arch16n k="{Please_Enable_Bluetooth}"><![CDATA[Please enable bluetooth]]></arch16n>
 <arch16n k="{Position}"><![CDATA[Position]]></arch16n>

@@ -537,6 +537,7 @@ validateAsset() {
   List f = new ArrayList(); // Fields to be validated
 
   f.add(fieldPair("Asset/Customer/Customer", "{Customer}"));
+  f.add(fieldPair("Asset/Hardware/Serial", "{Serial}"));
   f.add(fieldPair("Asset/Hardware/Notes", "{Notes}"));
 
   String validationMessage = validateFields(f, "PLAINTEXT");
