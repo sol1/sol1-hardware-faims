@@ -20,7 +20,7 @@
 
 <Asset>
   <Customer>
-    <Customer f="id notnull" t="dropdown">
+    <Customer f="notnull" t="dropdown">
       <desc>Name of the customer whose piece of hardware this "belongs to"</desc>
       <opts>
         <opt>Sol1</opt>
@@ -33,32 +33,30 @@
     <Manufacture_Date t="input">
       <desc>Approximate date of hardware manufacture</desc>
     </Manufacture_Date>
-    <Make t="input">
+    <Make f="id" t="input">
       <desc>Make/brand/manufacturer of the hardware</desc>
     </Make>
-    <Model t="input">
+    <Model f="id" t="input">
       <desc>Model of the hardware device</desc>
     </Model>
-
+    <Owner f="id" t="input">
+      <desc>Who is this device allocated to?</desc>
+    </Owner>
     <cols>
-      <Serial t="input">
+      <Serial f="notnull" t="input">
         <desc>Serial number</desc>
       </Serial>
-
       <Serial_Trigger t="button">
         <desc>Barcode scanner button</desc>
       </Serial_Trigger>
     </cols>
-
     <gps/>
-    
     <Photo t="camera">
       <desc>Attached photo</desc>
     </Photo>
     <Notes f="notnull" t="input">
       <desc>General notes</desc>
-    </Notes>
-    
+    </Notes>    
     <Attached_Audio t="audio"/>
     <Attached_Video t="video"/>
   </Hardware>
