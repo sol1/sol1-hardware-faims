@@ -35,7 +35,15 @@ mkdir -p wireframeImages
   
   ./makeElement.sh Asset_Hardware_Serial_Trigger "" button 2 false false false false false wireframeImages/
   
-  ./makeElement.sh Asset_Hardware_GPS_Location "" input 1 false false false false true wireframeImages/
+  ./makeElement.sh Asset_Hardware_Latitude "Latitude" input 2 false false true false true wireframeImages/
+  
+  ./makeElement.sh Asset_Hardware_Northing "Northing" input 2 false false true false true wireframeImages/
+  
+  ./makeElement.sh Asset_Hardware_Longitude "Longitude" input 2 false false true false true wireframeImages/
+  
+  ./makeElement.sh Asset_Hardware_Easting "Easting" input 2 false false true false true wireframeImages/
+  
+  ./makeElement.sh Asset_Hardware_Take_From_GPS "Take From GPS" button 1 false false false false false wireframeImages/
   
   ./makeElement.sh Asset_Hardware_Photo "" camera 1 false false true false false wireframeImages/
   
