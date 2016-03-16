@@ -22,6 +22,11 @@
   <Customer>
     <Customer f="id notnull" t="dropdown">
       <desc>Name of the customer whose piece of hardware this "belongs to"</desc>
+      <opts>
+        <opt>Sol1</opt>
+        <opt>FAIMS</opt>
+        <opt>Other</opt>
+      </opts>
     </Customer>
   </Customer>
   <Hardware>
@@ -47,14 +52,14 @@
         </Serial_Trigger>
       </col>
     </cols>
-    
+
     <GPS_Location t="gpsdiag">
       <desc>GPS location of device</desc>
     </GPS_Location>
-    <Photo t="picture">
+    <Photo t="camera">
       <desc>Attached photo</desc>
     </Photo>
-    <Notes f="notnull" >
+    <Notes f="notnull" t="input">
       <desc>General notes</desc>
     </Notes>
     
