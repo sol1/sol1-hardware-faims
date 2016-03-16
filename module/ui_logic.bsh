@@ -86,7 +86,7 @@ codeScannerCallback() {
     setFieldValue("Asset/Hardware/Serial", contents);
 }
 
-addOnEvent("Asset/Hardware/Serial_Trigger", "click", "scanCode(\"codeScannerCallback()\")");
+onEvent("Asset/Hardware/Serial_Trigger", "click", "scanCode(\"codeScannerCallback()\");");
 
 /******************************************************************************/
 /*                            BINDING ACCUMULATOR                             */
