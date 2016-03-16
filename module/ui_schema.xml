@@ -57,6 +57,7 @@
               </Colgroup_0>
               <GPS_Location/>
               <Photo/>
+              <Button_Photo/>
               <Notes/>
               <Attached_Audio/>
               <Button_Attached_Audio/>
@@ -184,16 +185,18 @@
         <input faims_read_only="true" ref="GPS_Location">
           <label>{GPS_Location}</label>
         </input>
-        <select1 type="image" faims_attribute_type="vocab" ref="Photo" faims_attribute_name="Photo">
+        <select type="camera" faims_attribute_type="measure" faims_sync="true" ref="Photo" faims_attribute_name="Photo">
           <label>{Photo}</label>
           <item>
             <label>Options not loaded</label>
             <value>0</value>
           </item>
-        </select1>
+        </select>
+        <trigger ref="Button_Photo">
+          <label>{Button_Photo}</label>
+        </trigger>
         <input faims_attribute_type="measure" ref="Notes" faims_attribute_name="Notes" faims_style_class="required">
           <label>{Notes}</label>
-          <!--WARNING: No type t was given for this view; assuming it is an input-->
         </input>
         <select type="file" faims_attribute_type="measure" faims_sync="true" ref="Attached_Audio" faims_attribute_name="Attached Audio">
           <label>{Attached_Audio}</label>

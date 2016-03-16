@@ -3,10 +3,17 @@
   <ArchaeologicalElement name="Asset">
     <description/>
     <property name="Customer" isIdentifier="true" type="vocab">
-      <!--WARNING: A set of <opts> tags are expected but not present-->
       <description>Name of the customer whose piece of hardware this "belongs to"</description>
       <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
       <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+      <lookup>
+        <term>{Sol1}
+<description/></term>
+        <term>{FAIMS}
+<description/></term>
+        <term>{Other}
+<description/></term>
+      </lookup>
     </property>
     <property name="Manufacture Date" type="measure">
       <description>Approximate date of hardware manufacture</description>
@@ -28,8 +35,7 @@
       <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
       <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
     </property>
-    <property name="Photo" type="vocab">
-      <!--WARNING: A set of <opts> tags are expected but not present-->
+    <property name="Photo" type="file" file="true" thumbnail="true">
       <description>Attached photo</description>
       <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
       <appendCharacterString><![CDATA[ - ]]></appendCharacterString>

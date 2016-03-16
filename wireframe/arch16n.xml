@@ -11,6 +11,7 @@
 <arch16n k="{Attached_Video}"><![CDATA[Attached Video]]></arch16n>
 <arch16n k="{Button_Attached_Audio}"><![CDATA[Attach Audio]]></arch16n>
 <arch16n k="{Button_Attached_Video}"><![CDATA[Attach Video]]></arch16n>
+<arch16n k="{Button_Photo}"><![CDATA[Attach Photograph]]></arch16n>
 <arch16n k="{Clean_Synced_Files}"><![CDATA[Clean synced files]]></arch16n>
 <arch16n k="{Confirm_Deletion}"><![CDATA[Confirm Deletion]]></arch16n>
 <arch16n k="{Control}"><![CDATA[Control]]></arch16n>
@@ -30,6 +31,7 @@
 <arch16n k="{Entity_Types}"><![CDATA[Entity Types]]></arch16n>
 <arch16n k="{External_GPS_Disabled}"><![CDATA[External GPS disabled]]></arch16n>
 <arch16n k="{External_GPS_Enabled}"><![CDATA[External GPS enabled]]></arch16n>
+<arch16n k="{FAIMS}"><![CDATA[FAIMS]]></arch16n>
 <arch16n k="{GPS_Diagnostics}"><![CDATA[GPS Diagnostics]]></arch16n>
 <arch16n k="{GPS_is_no_longer_initialised}"><![CDATA[GPS is no longer initialised]]></arch16n>
 <arch16n k="{GPS_is_not_initialised}"><![CDATA[GPS is not initialised]]></arch16n>
@@ -55,6 +57,7 @@
 <arch16n k="{on_and_bluetooth_connected}"><![CDATA[on and bluetooth connected]]></arch16n>
 <arch16n k="{on_and_bluetooth_disconnected}"><![CDATA[on and bluetooth disconnected]]></arch16n>
 <arch16n k="{on}"><![CDATA[on]]></arch16n>
+<arch16n k="{Other}"><![CDATA[Other]]></arch16n>
 <arch16n k="{Photo}"><![CDATA[Photo]]></arch16n>
 <arch16n k="{Please_Enable_Bluetooth}"><![CDATA[Please enable bluetooth]]></arch16n>
 <arch16n k="{Position}"><![CDATA[Position]]></arch16n>
@@ -67,6 +70,7 @@
 <arch16n k="{Select_User}"><![CDATA[Select User]]></arch16n>
 <arch16n k="{Serial}"><![CDATA[Serial]]></arch16n>
 <arch16n k="{Serial_Trigger}"><![CDATA[Serial Trigger]]></arch16n>
+<arch16n k="{Sol1}"><![CDATA[Sol1]]></arch16n>
 <arch16n k="{Sync_Disabled}"><![CDATA[Sync disabled]]></arch16n>
 <arch16n k="{Sync_Enabled}"><![CDATA[Sync enabled]]></arch16n>
 <arch16n k="{Take_From_GPS}"><![CDATA[Take From GPS]]></arch16n>

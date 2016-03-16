@@ -466,7 +466,6 @@ makeVocab(String type, String path, String attrib, List vocabExclusions, String 
     });
 }
 makeVocab("DropDown", "Asset/Customer/Customer", "Customer");
-makeVocab("PictureGallery", "Asset/Hardware/Photo", "Photo");
 
 
 /******************************************************************************/
@@ -670,6 +669,7 @@ addOnEvent("Control/Main/Record_Asset", "click", "onClickControlRecordAsset()");
 /*                   AUDIO, CAMERA, FILE AND VIDEO BINDINGS                   */
 /******************************************************************************/
 addOnEvent("Asset/Hardware/Button_Attached_Audio", "click", "attachAudioTo(\"Asset/Hardware/Attached_Audio\")");
+addOnEvent("Asset/Hardware/Button_Photo", "click", "attachPictureTo(\"Asset/Hardware/Photo\")");
 addOnEvent("Asset/Hardware/Button_Attached_Video", "click", "attachVideoTo(\"Asset/Hardware/Attached_Video\")");
 
 /******************************************************************************/
@@ -894,6 +894,7 @@ duplicateAsset(){
   disableAutoSave(tabgroup);
 
 
+  populateCameraPictureGallery("Asset/Hardware/Photo", new ArrayList());
   populateFileList("Asset/Hardware/Attached_Audio", new ArrayList());
   populateVideoGallery("Asset/Hardware/Attached_Video", new ArrayList());
 
@@ -926,6 +927,7 @@ duplicateAsset(){
   fetchAll(getDuplicateAttributeQuery(getUuid(tabgroup), extraDupeAttributes), new FetchCallback(){
     onFetch(result) {
       excludeAttributes = new ArrayList();
+      excludeAttributes.add("Photo");
       excludeAttributes.add("Attached Audio");
       excludeAttributes.add("Attached Video");
 
