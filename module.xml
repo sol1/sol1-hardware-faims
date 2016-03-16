@@ -41,16 +41,13 @@
     </Model>
 
     <cols>
-      <col>
-        <Serial t="input">
-          <desc>Serial number</desc>
-        </Serial>
-      </col>
-      <col>
-        <Serial_Trigger t="button">
-          <desc>Barcode scanner button</desc>
-        </Serial_Trigger>
-      </col>
+      <Serial t="input">
+        <desc>Serial number</desc>
+      </Serial>
+
+      <Serial_Trigger t="button">
+        <desc>Barcode scanner button</desc>
+      </Serial_Trigger>
     </cols>
 
     <gps/>
