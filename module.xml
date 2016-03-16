@@ -53,9 +53,8 @@
       </col>
     </cols>
 
-    <GPS_Location t="gpsdiag">
-      <desc>GPS location of device</desc>
-    </GPS_Location>
+    <gps/>
+    
     <Photo t="camera">
       <desc>Attached photo</desc>
     </Photo>
