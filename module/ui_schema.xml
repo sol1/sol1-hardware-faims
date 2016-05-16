@@ -20,6 +20,7 @@
             <User>
               <Select_User/>
               <Login/>
+              <Signup/>
             </User>
           </User>
           <Control>
@@ -115,6 +116,9 @@
         </select1>
         <trigger ref="Login">
           <label>{Login}</label>
+        </trigger>
+        <trigger ref="Signup">
+          <label>{Signup}</label>
         </trigger>
       </group>
     </group>

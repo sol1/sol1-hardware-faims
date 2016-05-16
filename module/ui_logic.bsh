@@ -80,7 +80,7 @@ newTab(String tab, Boolean resolveTabGroups) {
     default:
   }
 }
-  
+
 codeScannerCallback() {
     contents = getLastScanContents();
     setFieldValue("Asset/Hardware/Serial", contents);
@@ -339,7 +339,7 @@ selectUser () {
   if (isNull(userVocabId))
     return;
 
-  String userQ        = "SELECT userid,fname,lname,email FROM user " +
+  String userQ        = "SELECT userid,fname,lname,email,password FROM user " +
                         "WHERE  userid='" + userVocabId + "';";
   FetchCallback callback = new FetchCallback() {
     onFetch(result) {
@@ -347,7 +347,8 @@ selectUser () {
             result.get(0),
             result.get(1),
             result.get(2),
-            result.get(3)
+            result.get(3),
+            result.get(4)
       );
       setUser(user);
       username = result.get(1) + " " + result.get(2);
@@ -386,13 +387,13 @@ makeVocab(String type, String path, String attrib) {
 }
 
 /** Vocab Population **/
-/* Populates the path specified vocabulary from the database based on the given attribute name, where type 
+/* Populates the path specified vocabulary from the database based on the given attribute name, where type
 is the type of the vocab to populate (PictureGallery, HierarchicalPictureGallery, CheckBoxGroup, DropDown, HierarchicalDropDown, RadioGroup or List). */
 makeVocab(String type, String path, String attrib, List vocabExclusions) {
     makeVocab(type, path, attrib, vocabExclusions, null);
 }
 
-/* Populates the path specified vocabulary from the database based on the given attribute name, where type 
+/* Populates the path specified vocabulary from the database based on the given attribute name, where type
 is the type of the vocab to populate (PictureGallery, HierarchicalPictureGallery, CheckBoxGroup, DropDown, HierarchicalDropDown, RadioGroup or List). */
 makeVocab(String type, String path, String attrib, List vocabExclusions, String callbackFunction){
   if (isNull(type) || isNull(path) || isNull(attrib)) {
@@ -660,15 +661,25 @@ onShowAsset () {
 addOnEvent("Asset", "show", "onShowAsset()");
 
 onClickUserLogin () {
+  showVerifyUserDialog("doUserLogin()");
+}
+
+doUserLogin () {
   // TODO: Add some things which should happen when this element is clicked
   newTab("Control", true);
 }
+
+onClickUserSignup () {
+  showCreateUserDialog("populateListForUsers()");
+}
+
 onClickControlRecordAsset () {
   // TODO: Add some things which should happen when this element is clicked
   newAsset();
 }
 
 addOnEvent("User/User/Login", "click", "onClickUserLogin()");
+addOnEvent("User/User/Signup", "click", "onClickUserSignup()");
 addOnEvent("Control/Main/Record_Asset", "click", "onClickControlRecordAsset()");
 
 
